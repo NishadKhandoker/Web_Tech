@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li strong {
+    color: yellow;
+}
+
+/* Main Content and Sidebar */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+main section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+main aside {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Article */
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    margin-bottom: 5px;
+}
+
+/* Sidebar */
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside div {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+footer a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+/* Colorful Header per Page */
+.home-header { background-color: #1abc9c; }
+.world-header { background-color: #3498db; }
+.sports-header { background-color: #e67e22; }
