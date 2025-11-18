@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="University Admission Form for new students">
+    <meta name="keywords" content="University Admission, Form, Student Registration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #d9e4f5, #fdfdfd);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 25px 10px;
+            text-align: center;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        form {
+            width: 75%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #bbb;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 8px 15px;
+            font-size: 18px;
+            background: #003366;
+            color: white;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 16px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0055aa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>American International University–Bangladesh (AIUB)</h1>
+    <h2>University Admission Form</h2>
+</header>
+
+<form>
+
+    <!-- Personal Info Section -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" maxlength="50" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male <br>
+        <input type="radio" id="female" name="gender" value="Female" required> Female <br>
+        <input type="radio" id="other" name="gender" value="Other" required> Other
+    </fieldset>
+
+    <!-- Academic Information Section -->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label for="ssc">SSC GPA:</label>
+        <input type="text" id="ssc" maxlength="4" required>
+
+        <label for="hsc">HSC GPA:</label>
+        <input type="text" id="hsc" maxlength="4" required>
+
+        <label for="department">Preferred Department:</label>
+        <select id="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="cse">Computer Science & Engineering</option>
+            <option value="eee">Electrical & Electronic Engineering</option>
+            <option value="bba">Business Administration</option>
+            <option value="eng">English</option>
+        </select>
+
+        <label>Interests (Choose multiple):</label>
+        <input type="checkbox" id="coding" value="Coding"> Coding <br>
+        <input type="checkbox" id="robotics" value="Robotics"> Robotics <br>
+        <input type="checkbox" id="sports" value="Sports"> Sports <br>
+        <input type="checkbox" id="music" value="Music"> Music <br>
+    </fieldset>
+
+    <!-- Document Upload Section -->
+    <fieldset>
+        <legend>Document Upload</legend>
+
+        <label for="photo">Upload Your Photo:</label>
+        <input type="file" id="photo" accept="image/*" required>
+
+        <label for="transcript">SSC/HSC Transcript:</label>
+        <input type="file" id="transcript" accept=".pdf,.jpg,.jpeg,.png" required>
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button type="submit">Submit Application</button>
+        <button type="reset" style="background:#666;">Reset Form</button>
+    </div>
+
+</form>
+
+</body>
+</html>
