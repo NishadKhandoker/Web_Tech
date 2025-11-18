@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Md. Nishad Khandoker">
+    <meta name="description" content="Personal Portfolio of a Computer Science Student preparing for internship.">
+    <meta name="keywords" content="Portfolio, Computer Science, Internship, Student, Webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishad Khandoker Portfolio</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        main {
+            width: 85%;
+            margin: -30px auto 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #4b6cb7;
+            border-bottom: 2px solid #4b6cb7;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Education Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #4b6cb7;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        /* Contact Form */
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #4b6cb7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #182848;
+            transform: translateY(-2px);
+        }
+
+        /* Activities / Skills */
+        .activities {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .activity-card {
+            flex: 1 1 200px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            background: #182848;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Md. Nishad Khandoker</h1>
+    <nav>
+        <ul>
+            <li><a href="#bio">Biography</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Biography Section -->
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Md. Nishad Khandoker, a passionate Computer Science student preparing for internships. 
+            I enjoy programming, web development, and applying technology to solve real-world problems. 
+            I aim to contribute my skills effectively, grow professionally, and learn from industry experts.
+        </p>
+    </section>
+
+    <!-- Education Table -->
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>B.Sc in CSE</td>
+                <td>AIUB</td>
+                <td>2021–Present</td>
+                <td>CGPA: 3.83</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>Carmichael College, Rangpur</td>
+                <td>2020</td>
+                <td>GPA: 5.00</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>Gobindaganj High School, Rangpur</td>
+                <td>2017</td>
+                <td>GPA: 5.00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Activities / Skills Section -->
+    <section id="activities">
+        <h2>Activities & Skills</h2>
+        <div class="activities">
+            <div class="activity-card">
+                <h3>Programming</h3>
+                <p>C++, Python, Java, JavaScript</p>
+            </div>
+            <div class="activity-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="activity-card">
+                <h3>Machine Learning</h3>
+                <p>TensorFlow, PyTorch, Scikit-learn</p>
+            </div>
+            <div class="activity-card">
+                <h3>Competitive Programming</h3>
+                <p>Codeforces 1900+, Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Md. Nishad Khandoker | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
